@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://raheelashaikh.com/sitemap.xml
+
+# Specific directives
+Disallow: /admin/
+Disallow: /private/
+Disallow: *.pdf$
+
+# Crawl delay (optional)
+Crawl-delay: 1
