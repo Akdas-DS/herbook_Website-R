@@ -6,18 +6,24 @@ import { BlogSection } from "./components/BlogSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
 import { ErrorBoundary } from "./components/ErrorBoundary";
+import { FloatingElements } from "./components/FloatingElements";
+import { AnimatedBackground } from "./components/AnimatedBackground";
 
 export default function App() {
   return (
     <ErrorBoundary>
-      <div className="dark min-h-screen bg-slate-950">
-        <HeroSection />
-        <AboutSection id="about" />
-        <InstagramSection id="instagram" />
-        <BookSection id="book" />
-        <BlogSection id="blog" />
-        <ContactSection id="contact" />
-        <Footer />
+      <div className="dark min-h-screen bg-slate-950 relative overflow-hidden">
+        <AnimatedBackground />
+        <FloatingElements />
+        <div className="relative z-10">
+          <HeroSection />
+          <AboutSection id="about" />
+          <InstagramSection id="instagram" />
+          <BookSection id="book" />
+          <BlogSection id="blog" />
+          <ContactSection id="contact" />
+          <Footer />
+        </div>
       </div>
     </ErrorBoundary>
   );

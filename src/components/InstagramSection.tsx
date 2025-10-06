@@ -11,27 +11,27 @@ export function InstagramSection({ id }: { id?: string }) {
       title: "The Psychology of Resilience",
       caption: "Breaking down the mental strategies that help us bounce back from life's challenges. Resilience isn't just born - it's built through practice and understanding.",
       image: "https://images.unsplash.com/photo-1620147512372-9e00421556bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbW90aW9uYWwlMjBpbnRlbGxpZ2VuY2UlMjByZWxhdGlvbnNoaXBzfGVufDF8fHx8MTc1OTQ5NTcyNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      likes: 1834,
-      comments: 127,
-      link: "https://www.instagram.com/reel/DO7YvdCAvjW/?igsh=cDZjcXlscHFwajc4"
+      likes: 892,
+      comments: 67,
+      link: "https://www.instagram.com/reel/DPb4QBpiiwU/?igsh=M245MmlvaDE3ZGM0"
     },
     {
       id: 2,
       title: "Emotional Intelligence in Relationships", 
       caption: "How understanding your emotions can transform your connections with others. These 5 key signs show healthy emotional awareness in action.",
       image: "https://images.unsplash.com/photo-1705056509092-5d7b1a789eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbW90aW9uYWwlMjBpbnRlbGxpZ2VuY2UlMjByZWxhdGlvbnNoaXBzfGVufDF8fHx8MTc1OTQ5NTcyNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      likes: 2247,
-      comments: 98,
-      link: "https://www.instagram.com/reel/DOmEC5VAife/?igsh=MWd0aXY2NmFic3dycA=="
+      likes: 1456,
+      comments: 123,
+      link: "https://www.instagram.com/p/DPb1NuWglYJ/?igsh=MWkwenRidzQxMGw5Zg=="
     },
     {
       id: 3,
       title: "Self-Care & Mental Wellness",
       caption: "Reminder: Taking care of your mental health isn't selfish—it's essential. Small daily practices that make a big difference in your wellbeing.",
       image: "https://images.unsplash.com/photo-1758599879787-03999f72d994?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWxmJTIwY2FyZSUyMG1pbmRmdWxuZXNzJTIwd2VsbG5lc3N8ZW58MXx8fHwxNzU5NDk1NzI4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      likes: 3156,
-      comments: 184,
-      link: "https://www.instagram.com/p/DOk5vL8Anmh/?igsh=cTBhYjZzdHExcjJk"
+      likes: 2034,
+      comments: 89,
+      link: "https://www.instagram.com/p/DPavIA1goR7/?igsh=YmVnYTZhNTEzZnlq"
     }
   ];
 
@@ -40,7 +40,7 @@ export function InstagramSection({ id }: { id?: string }) {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <Instagram className="text-purple-400" size={36} />
+            <Instagram className="text-purple-400 animate-neuralPulse" size={36} />
             <h2 className="font-serif text-4xl md:text-5xl text-slate-100">
               Instagram Insights
             </h2>
@@ -60,7 +60,7 @@ export function InstagramSection({ id }: { id?: string }) {
               rel="noopener noreferrer"
               className="block"
             >
-              <Card className="group overflow-hidden bg-slate-800/50 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 cursor-pointer">
+              <Card className="group overflow-hidden bg-slate-800/50 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 animate-quantumShift magnetic-hover glass-morphism">
                 <div className="relative overflow-hidden">
                   <div className="w-full h-64 bg-gradient-to-br from-slate-700 to-slate-800 overflow-hidden">
                     <ImageWithFallback 
@@ -96,21 +96,47 @@ export function InstagramSection({ id }: { id?: string }) {
           ))}
         </div>
 
-        <div className="text-center">
-          <a 
-            href="https://www.instagram.com/that_orphicpsychgrad?igsh=MWZ4bG5oM3gybHpobw=="
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button 
-              size="lg"
-              className="bg-gradient-to-r from-purple-600 to-teal-600 hover:from-purple-700 hover:to-teal-700 text-white px-10 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+        <div className="text-center space-y-8">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <a 
+              href="https://www.instagram.com/that_orphicpsychgrad?igsh=MWZ4bG5oM3gybHpobw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
             >
-              <Instagram className="mr-2" size={20} />
-              Follow @that_orphicpsychgrad
-            </Button>
-          </a>
-          <p className="text-slate-400 mt-4">
+              <div className="relative">
+                <div className="absolute -inset-3 bg-gradient-to-r from-purple-500/40 to-teal-500/40 rounded-full opacity-75 group-hover:opacity-100 transition-opacity duration-300 animate-liquidMorph"></div>
+                <Button 
+                  size="lg"
+                  className="relative bg-gradient-to-r from-purple-600 to-teal-600 hover:from-purple-700 hover:to-teal-700 text-white px-10 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/25 animate-prismaticShift magnetic-hover glass-morphism"
+                >
+                  <Instagram className="mr-2 animate-zoomPulse" size={20} />
+                  <span className="neon-glow">Follow @that_orphicpsychgrad</span>
+                </Button>
+              </div>
+            </a>
+            
+            <a 
+              href="https://www.instagram.com/rawthoughts_byrs?igsh=cmd0bDRkMDN5aGF2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <div className="relative">
+                <div className="absolute -inset-3 bg-gradient-to-r from-teal-500/40 to-purple-500/40 rounded-full opacity-75 group-hover:opacity-100 transition-opacity duration-300 animate-liquidMorph" style={{ animationDelay: '3s' }}></div>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="relative border-2 border-teal-400/50 text-teal-300 hover:bg-teal-950/50 hover:border-teal-300 px-10 py-4 rounded-full transition-all duration-300 animate-morphingButton magnetic-hover glass-morphism"
+                >
+                  <Instagram className="mr-2 animate-thoughtRipple" size={20} />
+                  <span className="neon-glow">Follow @rawthoughts_byrs</span>
+                </Button>
+              </div>
+            </a>
+          </div>
+          
+          <p className="text-slate-400">
             Join our community exploring psychology together
           </p>
         </div>

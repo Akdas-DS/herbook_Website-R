@@ -9,7 +9,7 @@ export function BookSection({ id }: { id?: string }) {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <BookOpen className="text-teal-400" size={36} />
+            <BookOpen className="text-teal-400 animate-mindFlow" size={36} />
             <h2 className="font-serif text-4xl md:text-5xl text-slate-100">
               Featured Book
             </h2>
@@ -19,16 +19,16 @@ export function BookSection({ id }: { id?: string }) {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Book Cover */}
-          <div className="flex justify-center">
+          <div className="flex justify-center animate-slideInLeft">
             <div className="relative group">
-              <div className="absolute -inset-6 bg-gradient-to-r from-purple-500/30 to-teal-500/30 rounded-3xl opacity-50 group-hover:opacity-70 transition-opacity duration-300 blur-xl"></div>
+              <div className="absolute -inset-6 bg-gradient-to-r from-purple-500/30 to-teal-500/30 rounded-3xl opacity-50 group-hover:opacity-70 transition-opacity duration-300 blur-xl animate-synapseGlow"></div>
               <div className="relative">
                 <img 
                   src={bookCover} 
                   alt="Embers of Ahima: A Heart Reclaimed"
                   className="w-80 h-auto rounded-2xl shadow-2xl border-4 border-slate-700 group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute -top-4 -right-4 bg-gradient-to-r from-purple-500 to-teal-500 text-white px-4 py-2 rounded-full text-sm animate-pulse shadow-lg">
+                <div className="absolute -top-4 -right-4 bg-gradient-to-r from-purple-500 to-teal-500 text-white px-4 py-2 rounded-full text-sm animate-neuralPulse shadow-lg">
                   New Release!
                 </div>
               </div>
@@ -36,7 +36,7 @@ export function BookSection({ id }: { id?: string }) {
           </div>
 
           {/* Book Details */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-slideInRight">
             <div>
               <h3 className="font-serif text-3xl md:text-4xl text-slate-100 mb-3">
                 Embers of Ahima
@@ -85,25 +85,25 @@ export function BookSection({ id }: { id?: string }) {
 
             <div className="flex flex-col sm:flex-row gap-6">
               <a 
-                href="https://amazon.com/search?k=Embers+of+Ahima+Raheela+Shaikh" 
+                href="https://amzn.in/d/dOjDth2" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex-1"
               >
                 <Button 
                   size="lg"
-                  className="w-full bg-gradient-to-r from-teal-600 to-purple-600 hover:from-teal-700 hover:to-purple-700 text-white px-10 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+                  className="w-full bg-gradient-to-r from-teal-600 to-purple-600 hover:from-teal-700 hover:to-purple-700 text-white px-10 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/25 animate-prismaticShift magnetic-hover glass-morphism"
                 >
-                  <ShoppingCart className="mr-2" size={20} />
-                  Buy Me on Amazon
+                  <ShoppingCart className="mr-2 animate-zoomPulse" size={20} />
+                  <span className="neon-glow">Buy Me on Amazon</span>
                 </Button>
               </a>
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-teal-400/50 text-teal-300 hover:bg-teal-950/50 hover:border-teal-300 px-10 py-4 rounded-full transition-all duration-300"
+                className="border-2 border-teal-400/50 text-teal-300 hover:bg-teal-950/50 hover:border-teal-300 px-10 py-4 rounded-full transition-all duration-300 animate-morphingButton magnetic-hover glass-morphism"
               >
-                Read Preview
+                <span className="neon-glow">Read Preview</span>
               </Button>
             </div>
 
