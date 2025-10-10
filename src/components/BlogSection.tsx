@@ -1,4 +1,4 @@
-import { PenTool, Clock, ArrowRight, Lightbulb, Heart, Brain } from "lucide-react";
+import { PenTool, ArrowRight, Lightbulb, Heart, Brain } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -36,7 +36,7 @@ export function BlogSection({ id }: { id?: string }) {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <PenTool className="text-purple-400 animate-floatingThought" size={36} />
+            <PenTool className="text-purple-400" size={36} />
             <h2 className="font-serif text-4xl md:text-5xl text-slate-100">
               Insights & Reflections
             </h2>
@@ -51,7 +51,7 @@ export function BlogSection({ id }: { id?: string }) {
           {blogPosts.map((post) => {
             const IconComponent = post.icon;
             return (
-              <Card key={post.id} className="group bg-slate-800/50 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 overflow-hidden interactive-card glass-morphism">
+              <Card key={post.id} className="group bg-slate-800/50 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 overflow-hidden hover:-translate-y-2">
                 <div className="p-8">
                   <div className="flex items-center justify-between mb-6">
                     <div className={`p-3 rounded-lg border ${post.color}`}>

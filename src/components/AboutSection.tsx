@@ -14,8 +14,8 @@ export function AboutSection({ id }: { id?: string }) {
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Profile Photo - Placeholder */}
-          <div className="flex justify-center animate-slideInLeft">
+          {/* Profile Photo */}
+          <div className="flex justify-center">
             <div className="relative">
               <div className="w-80 h-80 rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-700">
                 <ImageWithFallback 
@@ -24,22 +24,19 @@ export function AboutSection({ id }: { id?: string }) {
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-purple-500/30 rounded-full animate-floatingThought"></div>
-              <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-teal-500/20 rounded-full animate-mindFlow"></div>
             </div>
           </div>
           
           {/* Biography */}
-          <div className="space-y-8 animate-slideInRight">
+          <div className="space-y-8">
             <div className="flex items-center gap-4 mb-8">
-              <div className="p-3 bg-purple-900/50 rounded-lg border border-purple-500/30 animate-neuralPulse">
+              <div className="p-3 bg-purple-900/50 rounded-lg border border-purple-500/30">
                 <GraduationCap className="text-purple-400" size={24} />
               </div>
-              <div className="p-3 bg-teal-900/50 rounded-lg border border-teal-500/30 animate-neuralPulse delay-300">
+              <div className="p-3 bg-teal-900/50 rounded-lg border border-teal-500/30">
                 <Instagram className="text-teal-400" size={24} />
               </div>
-              <div className="p-3 bg-slate-800 rounded-lg border border-slate-600 animate-neuralPulse delay-500">
+              <div className="p-3 bg-slate-800 rounded-lg border border-slate-600">
                 <PenTool className="text-slate-300" size={24} />
               </div>
             </div>

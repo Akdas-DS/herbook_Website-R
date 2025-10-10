@@ -1,4 +1,4 @@
-import { Instagram, ExternalLink, Heart, MessageCircle, Share } from "lucide-react";
+import { Instagram, ExternalLink, Heart, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
@@ -40,7 +40,7 @@ export function InstagramSection({ id }: { id?: string }) {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <Instagram className="text-purple-400 animate-neuralPulse" size={36} />
+            <Instagram className="text-purple-400" size={36} />
             <h2 className="font-serif text-4xl md:text-5xl text-slate-100">
               Instagram Insights
             </h2>
@@ -60,7 +60,7 @@ export function InstagramSection({ id }: { id?: string }) {
               rel="noopener noreferrer"
               className="block"
             >
-              <Card className="group overflow-hidden bg-slate-800/50 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 animate-quantumShift magnetic-hover glass-morphism">
+              <Card className="group overflow-hidden bg-slate-800/50 border border-slate-700/50 shadow-lg hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 cursor-pointer hover:-translate-y-2">
                 <div className="relative overflow-hidden">
                   <div className="w-full h-64 bg-gradient-to-br from-slate-700 to-slate-800 overflow-hidden">
                     <ImageWithFallback 
@@ -102,37 +102,29 @@ export function InstagramSection({ id }: { id?: string }) {
               href="https://www.instagram.com/that_orphicpsychgrad?igsh=MWZ4bG5oM3gybHpobw=="
               target="_blank"
               rel="noopener noreferrer"
-              className="group"
             >
-              <div className="relative">
-                <div className="absolute -inset-3 bg-gradient-to-r from-purple-500/40 to-teal-500/40 rounded-full opacity-75 group-hover:opacity-100 transition-opacity duration-300 animate-liquidMorph"></div>
-                <Button 
-                  size="lg"
-                  className="relative bg-gradient-to-r from-purple-600 to-teal-600 hover:from-purple-700 hover:to-teal-700 text-white px-10 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/25 animate-prismaticShift magnetic-hover glass-morphism"
-                >
-                  <Instagram className="mr-2 animate-zoomPulse" size={20} />
-                  <span className="neon-glow">Follow @that_orphicpsychgrad</span>
-                </Button>
-              </div>
+              <Button 
+                size="lg"
+                className="bg-gradient-to-r from-purple-600 to-teal-600 hover:from-purple-700 hover:to-teal-700 text-white px-10 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-purple-500/25"
+              >
+                <Instagram className="mr-2" size={20} />
+                Follow @that_orphicpsychgrad
+              </Button>
             </a>
             
             <a 
               href="https://www.instagram.com/rawthoughts_byrs?igsh=cmd0bDRkMDN5aGF2"
               target="_blank"
               rel="noopener noreferrer"
-              className="group"
             >
-              <div className="relative">
-                <div className="absolute -inset-3 bg-gradient-to-r from-teal-500/40 to-purple-500/40 rounded-full opacity-75 group-hover:opacity-100 transition-opacity duration-300 animate-liquidMorph" style={{ animationDelay: '3s' }}></div>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="relative border-2 border-teal-400/50 text-teal-300 hover:bg-teal-950/50 hover:border-teal-300 px-10 py-4 rounded-full transition-all duration-300 animate-morphingButton magnetic-hover glass-morphism"
-                >
-                  <Instagram className="mr-2 animate-thoughtRipple" size={20} />
-                  <span className="neon-glow">Follow @rawthoughts_byrs</span>
-                </Button>
-              </div>
+              <Button 
+                size="lg"
+                variant="outline"
+                className="border-2 border-teal-400/50 text-teal-300 hover:bg-teal-950/50 hover:border-teal-300 px-10 py-4 rounded-full transition-all duration-300"
+              >
+                <Instagram className="mr-2" size={20} />
+                Follow @rawthoughts_byrs
+              </Button>
             </a>
           </div>
           
